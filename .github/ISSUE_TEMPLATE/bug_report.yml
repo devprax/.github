@@ -1,0 +1,68 @@
+name: Bug report
+description: Report a reproducible problem in this project.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report bugs in the affected project's repository. For usage questions, see our [support guide](https://github.com/devprax/.github/blob/main/SUPPORT.md).
+        For suspected vulnerabilities, follow our [security policy](https://github.com/devprax/.github/blob/main/SECURITY.md) instead of posting details here.
+        Remove secrets and personal or confidential data from all examples, logs, and screenshots.
+  - type: checkboxes
+    id: before-submitting
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What went wrong?
+      description: Describe the problem and how it affects your use of the project.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Include the release version or commit SHA. If unknown, explain how you installed the project.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant OS, runtime, installation method, and integration or dependency versions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide minimal steps, sample input, or a small reproduction. If intermittent, describe when it happens and how often.
+      placeholder: |
+        1. Set up ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include relevant error messages with sensitive information removed.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Optional sanitized logs, screenshots, related issues, or workarounds.

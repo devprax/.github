@@ -1,0 +1,48 @@
+name: Feature request
+description: Propose an improvement and explain the problem it would solve.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us understand the need before discussing implementation. Submit the request in the affected project's repository.
+        For usage questions, see our [support guide](https://github.com/devprax/.github/blob/main/SUPPORT.md).
+        Keep sensitive information out of this public request.
+  - type: checkboxes
+    id: before-submitting
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for a similar request.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to accomplish, who would benefit, and what is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior or outcome you would like. Implementation details are optional.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe existing features, workarounds, or other approaches and their limitations. Write "None yet" if applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and impact
+      description: Optional concerns about existing workflows, APIs, configuration, dependencies, or supported environments.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Optional examples, sketches, related requests, or ways you could help.

@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions and support
+    url: https://github.com/devprax/.github/blob/main/SUPPORT.md
+    about: Find the appropriate place for questions and troubleshooting.
+  - name: Report a security vulnerability
+    url: https://github.com/devprax/.github/blob/main/SECURITY.md
+    about: Read the private reporting instructions before sharing any vulnerability details.
+  - name: Community conduct concerns
+    url: https://github.com/devprax/.github/blob/main/CODE_OF_CONDUCT.md
+    about: Read the conduct policy and current reporting options before sharing incident details.
